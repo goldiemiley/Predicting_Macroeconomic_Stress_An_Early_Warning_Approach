@@ -46,15 +46,9 @@ These are values **transcribed from the uploaded project report**, not newly ind
 - `docs/PRIVACY.md` — audit and public-release checklist.
 - `results/` — aggregate, non-personal performance tables.
 
-## Run in Colab
+## Data sources
 
-1. Open `notebooks/forward_warning_colab.ipynb` in [Google Colab](https://colab.research.google.com/).
-2. Create/copy your own country-year table in BigQuery, and make sure your Google identity is permitted to query it. **Do not grant public access to private Google Cloud project credentials.**
-3. In the notebook, set `PROJECT_ID` and `TABLE_ID` in your own session (not in a public committed copy). Authentication uses Colab's interactive Google OAuth.
-4. Run all cells. The notebook uses data through 2016 for training and 2017–2020 for testing, with predictors lagged by one year; it does not reuse future observations in training.
-5. Review printed metrics and update this README only with values actually produced by that run.
-
-The BigQuery table itself is **not bundled**. Public WDI indicator data have their own citation and licensing terms; cite and comply with [World Bank Open Data](https://data.worldbank.org/) and [Google Cloud BigQuery public datasets](https://cloud.google.com/bigquery/public-data).
+Public WDI indicator data have their own citation and licensing terms; cite and comply with [World Bank Open Data](https://data.worldbank.org/) and [Google Cloud BigQuery public datasets](https://cloud.google.com/bigquery/public-data).
 
 ## Limitations
 
